@@ -1,0 +1,25 @@
+﻿<ResourceDictionary x:Class="WpfCustomControlLibrary.Themes.Default"
+                    x:ClassModifier="internal"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:gui="clr-namespace:WpfCustomControlLibrary.Gui"
+                    xmlns:res="clr-namespace:WpfCustomControlLibrary.Resources">
+
+    <Style TargetType="{x:Type gui:CustomControl}">
+        <Setter Property="Background" Value="{res:ThemeResource ControlBackgroundBrushKey}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource OrangeBrushKey}" />
+        <Setter Property="BorderThickness" Value="2" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type gui:CustomControl}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

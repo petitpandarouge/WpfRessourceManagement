@@ -1,0 +1,12 @@
+﻿<Window x:Class="ResourceManagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:lib="http://schemas.wpfcustomcontrol.com/winfx/2016/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <SolidColorBrush x:Key="OrangeBrushKey" Color="Orange" />
+    </Window.Resources>
+    <Grid>
+        <lib:CustomControl />
+    </Grid>
+</Window>
